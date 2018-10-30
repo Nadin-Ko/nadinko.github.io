@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Home page</title>
+		<link rel="shortcut icon" href="images/pump.png" type="image/png">
+			 <style type="text/css">
+			 body {
+				margin: 0 auto; 
+				padding:0;
+				font-family: tahoma; 
+				font-size:15px; 
+				line-height:20px; 
+				background: #212121;
+			}
+			
+			.header {
+				height: 169px;
+				margin: 0 auto; 
+				width: 75%;
+				background: url(images/head2.jpg) repeat-x;
+				text-align: center;
+			}
+						
+			.mainBlock {
+				width: 75%;
+				height: 100%;
+				margin: 0 auto; 
+				background: #ffffff;
+				margin-bottom: -15px;
+			}
+			
+			.content {
+				display:inline-block;
+				width: 99%;
+				height: inherit;
+				margin: 80px 0 20px 0;
+				text-align: justify;
+			}
+			
+			.header h1 {
+				font-size: 22px;
+				color: #212121;
+				margin-top: 0; 
+				padding-top: 12px;
+			}
+			
+			.inCenter {
+				text-align: center;
+			}
+			
+			.frame {
+				border: 4px solid #ffffff;
+				border-radius: 30px;
+			}
+					
+			.footer {
+				margin: 0 auto; 
+				position: static;
+				left: 0; bottom: 0;
+				height: 65px;
+				width: 75%;
+				background: url(images/footer2.jpg) repeat-x; 
+			}
+			
+			.footer p {
+				text-align: right;
+				padding: 8px 10px 0 0;
+				margin-bottom: 0;
+			}
+			
+			a.imgVk {
+				background: url(images/vk.png);
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+			}
+			a.imgVk:hover {
+				background: url(images/vk2.png);
+			}
+			
+			a.imgMail {
+				background: url(images/mail.png);
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+			}
+			a.imgMail:hover {
+				background: url(images/mail2.png);
+			}
+			
+			.imgRight {
+				float: right;
+			}
+			
+			.content span.layer {
+				cursor:pointer;
+				background-color:#F7BA5F;
+				border:2px dashed #F7BA5F;
+				border-bottom:0;
+				padding: 4px;
+				display:inline-block;
+			}
+			
+			.content li {
+				list-style-type: none;
+			}
+			.content ul {
+				margin-left: 0;
+				padding-left: 0;
+			}
+			
+			.content span.On {
+				background-color:#FFF3D8;
+				font-weight:bold;
+			}
+
+			.content div.layer {
+				border: 2px dashed #F8BD5F;
+				width:inherit;
+				color:#000;
+				background-color:#FFF3D8;
+				padding:5px;
+				display:none;
+			}
+
+			.content div.layer P {
+				padding: 4px 20px;
+				margin: 0;
+				text-indent: 20px;
+			}
+
+			.content div.On {
+				display:block
+			}
+		</style> 
+	</head>
+
+	<body>
+		<div class="header">
+		<h1>Надежда Кожунова</h1> 
+		<p class="inCenter"><img src="images/photo.jpg" class="frame"></p>
+		</div>
+	<div class="mainBlock">
+	<div class="content">
+		<p style="padding: 4px 20px; text-indent: 20px;"> Доброго дня! Меня зовут Надя, и на этой странице вы можете найти немного информации обо мне.
+		Воспринимать всё абсолютно серьёзно не рекомендуется, ибо местами проскальзывает мой несколько специфичный юмор. </p>
+		<ul>
+			<li><span class="layer On" onClick='layer(0)'><img src="images/study.png" title="Образование"></span>
+					<div class="layer On">
+						<p>В далеком 2015-ом году я закончила Челябинский государственный педагогический университет 
+						(ЧГПУ – да, тогда он еще так назывался) по специальности «Учитель информатики».</p>
+						<p>Впрочем, учителем я не стала. <s>Un</s>fortunately.</p> 
+						<p>В настоящее время посещаю вечерние курсы переподготовки кадров в ЧелГУ по программе 
+						«Переводчик в сфере профессиональной коммуникации (английский язык)». Переводчиком, конечно же, стать не стремлюсь 
+						(такие вещи за 2 года не делаются), хожу туда ради <s>корочки</s> знаний английского.</p>
+					</div>
+			</li>
+			<li><span class="layer" onClick='layer(1)'><img src="images/work.png" title="Работа"></span>
+					<div class="layer">
+						<p>Работаю я менеджером по документообороту в учебном центре «Листик и Партнеры» при одноимённой аудиторской фирме.
+						По сути, целыми днями я составляю и печатаю договоры и запаковываю письма. Занимаюсь этим я уже более двух лет, 
+						и результат моей работы растет, как на дрожжах <s>(горы бумаги становятся все больше и больше)</s>.</p>
+						<p>В связи с этим мне хочется сменить сферу деятельности и найти всё-таки то, к чему бы душа лежала.</p>
+					</div>
+			</li>
+			<li><span class="layer" onClick='layer(2)'><img src="images/hobby.png" title="Хобби"></span>
+					<div class="layer">
+						<p><img src="images/pumpkin.gif" class="imgRight">
+						Скажу честно: я не больно-то активный человек, да и занятия спортом мне противопоказаны по состоянию здоровья)) 
+						Этому я скорее предпочту чтение книг. Можно ли чтение считать хобби? Почему бы и нет. А так как я сейчас изучаю английский, 
+						то потихоньку начинаю читать книги и на языке оригинала. И, мне кажется, это здорово.</p>
+						<p>Также иногда я рисую (и считаю, что пиксельная графика – это мило).</p>
+					</div>
+			</li>
+		</ul>
+
+	<script>	
+		function layer(a) {
+			l=getElementsByClass('layer',null,'div');
+			for(var i=0;i<l.length;i++)l[i].style.display=(i==a?'block':'none');
+			l=getElementsByClass('layer',null,'span');
+			for(var i=0;i<l.length;i++) {
+				l[i].className=(i==a?'layer On':'layer');
+			}
+		}
+
+		function getElementsByClass(searchClass,node,tag) {
+			var classElements=new Array();
+			if ( node == null ) node=document;
+			else 
+				if(typeof(node)!="object")node=document.getElementById(node); 
+				if(!node)return;
+				if ( tag == null ) tag='*';
+				var els=node.getElementsByTagName(tag);
+				var elsLen=els.length;
+				var pattern=new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+					for (i=0, j=0; i < elsLen; i++) {
+						if ( pattern.test(els[i].className) ) {
+							classElements[j]=els[i];
+							j++;
+						}
+					}
+			return classElements;
+		}
+	</script>
+	
+	</div>
+	</div>
+	<div class="footer">
+   <p><a href="mailto:nadezhda-kozhuno@mail.ru" class="imgMail"></a> <a href="https://vk.com/id24753749" class="imgVk"></a></p>
+	</div>
+	</body>
+</html>
